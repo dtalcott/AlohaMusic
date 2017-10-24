@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="edu.orangecoastcollege.cs273.alohamusic.MusicActivity">
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:id="@+id/ukuleleImageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/ukulele" />
+
+    <Button
+        android:id="@+id/ukuleleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="playMedia"
+        android:text="@string/ukulele_button_play_text"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:id="@+id/ipuImageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/ipu" />
+
+    <Button
+        android:id="@+id/ipuButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ipu_button_play_text"
+        android:textSize="18sp"
+        android:onClick="playMedia"/>
+
+    <VideoView
+        android:layout_marginTop="10dp"
+        android:id="@+id/hulaVideoView"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="0dp"
+        android:layout_weight = "1"/>
+
+    <Button
+        android:layout_marginBottom="10dp"
+        android:id="@+id/hulaVideoButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hula_button_watch_text"
+        android:onClick="playMedia"/>
+</LinearLayout>
